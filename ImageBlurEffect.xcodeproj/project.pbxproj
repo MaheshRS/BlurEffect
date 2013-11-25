@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D46C489183E0BE600474365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C488183E0BE600474365 /* Foundation.framework */; };
+		3D46C48B183E0BE600474365 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C48A183E0BE600474365 /* CoreGraphics.framework */; };
+		3D46C48D183E0BE600474365 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C48C183E0BE600474365 /* UIKit.framework */; };
+		3D46C493183E0BE600474365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D46C491183E0BE600474365 /* InfoPlist.strings */; };
+		3D46C495183E0BE600474365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46C494183E0BE600474365 /* main.m */; };
+		3D46C499183E0BE600474365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46C498183E0BE600474365 /* AppDelegate.m */; };
+		3D46C49C183E0BE600474365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D46C49A183E0BE600474365 /* Main.storyboard */; };
+		3D46C49F183E0BE600474365 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46C49E183E0BE600474365 /* ViewController.m */; };
+		3D46C4A1183E0BE600474365 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D46C4A0183E0BE600474365 /* Images.xcassets */; };
+		3D46C4A8183E0BE600474365 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C4A7183E0BE600474365 /* XCTest.framework */; };
+		3D46C4A9183E0BE600474365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C488183E0BE600474365 /* Foundation.framework */; };
+		3D46C4AA183E0BE600474365 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D46C48C183E0BE600474365 /* UIKit.framework */; };
+		3D46C4B2183E0BE600474365 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D46C4B0183E0BE600474365 /* InfoPlist.strings */; };
+		3D46C4B4183E0BE600474365 /* ImageBlurEffectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46C4B3183E0BE600474365 /* ImageBlurEffectTests.m */; };
+		3D46C4C1183E0C7F00474365 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D46C4C0183E0C7F00474365 /* UIImage+ImageEffects.m */; };
+		3D61B49618435E4300C79950 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D61B49518435E4300C79950 /* DetailViewController.m */; };
+		3DE31E56183F235900A32E4F /* brave@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE31E54183F235900A32E4F /* brave@2x.png */; };
+		3DE31E57183F235900A32E4F /* brave.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE31E55183F235900A32E4F /* brave.png */; };
+		3DE645B9183F87DC00FDB8D2 /* BlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE645B8183F87DC00FDB8D2 /* BlurView.m */; };
+		4F91C3921841C3830017D6BB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F91C3911841C3830017D6BB /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D46C4AB183E0BE600474365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D46C47D183E0BE600474365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D46C484183E0BE600474365;
+			remoteInfo = ImageBlurEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D46C485183E0BE600474365 /* ImageBlurEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageBlurEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D46C488183E0BE600474365 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D46C48A183E0BE600474365 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D46C48C183E0BE600474365 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D46C490183E0BE600474365 /* ImageBlurEffect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageBlurEffect-Info.plist"; sourceTree = "<group>"; };
+		3D46C492183E0BE600474365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D46C494183E0BE600474365 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D46C496183E0BE600474365 /* ImageBlurEffect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageBlurEffect-Prefix.pch"; sourceTree = "<group>"; };
+		3D46C497183E0BE600474365 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D46C498183E0BE600474365 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D46C49B183E0BE600474365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D46C49D183E0BE600474365 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3D46C49E183E0BE600474365 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3D46C4A0183E0BE600474365 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D46C4A6183E0BE600474365 /* ImageBlurEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBlurEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D46C4A7183E0BE600474365 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3D46C4AF183E0BE600474365 /* ImageBlurEffectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ImageBlurEffectTests-Info.plist"; sourceTree = "<group>"; };
+		3D46C4B1183E0BE600474365 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D46C4B3183E0BE600474365 /* ImageBlurEffectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBlurEffectTests.m; sourceTree = "<group>"; };
+		3D46C4BF183E0C7F00474365 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		3D46C4C0183E0C7F00474365 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		3D61B49418435E4300C79950 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		3D61B49518435E4300C79950 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		3DE31E54183F235900A32E4F /* brave@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brave@2x.png"; sourceTree = "<group>"; };
+		3DE31E55183F235900A32E4F /* brave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brave.png; sourceTree = "<group>"; };
+		3DE645B7183F87DC00FDB8D2 /* BlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurView.h; path = ImageBlurEffect/BlurView.h; sourceTree = SOURCE_ROOT; };
+		3DE645B8183F87DC00FDB8D2 /* BlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurView.m; path = ImageBlurEffect/BlurView.m; sourceTree = SOURCE_ROOT; };
+		4F91C3911841C3830017D6BB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D46C482183E0BE600474365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F91C3921841C3830017D6BB /* QuartzCore.framework in Frameworks */,
+				3D46C48B183E0BE600474365 /* CoreGraphics.framework in Frameworks */,
+				3D46C48D183E0BE600474365 /* UIKit.framework in Frameworks */,
+				3D46C489183E0BE600474365 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D46C4A3183E0BE600474365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46C4A8183E0BE600474365 /* XCTest.framework in Frameworks */,
+				3D46C4AA183E0BE600474365 /* UIKit.framework in Frameworks */,
+				3D46C4A9183E0BE600474365 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D46C47C183E0BE600474365 = {
+			isa = PBXGroup;
+			children = (
+				3D46C48E183E0BE600474365 /* ImageBlurEffect */,
+				3D46C4AD183E0BE600474365 /* ImageBlurEffectTests */,
+				3D46C487183E0BE600474365 /* Frameworks */,
+				3D46C486183E0BE600474365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D46C486183E0BE600474365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C485183E0BE600474365 /* ImageBlurEffect.app */,
+				3D46C4A6183E0BE600474365 /* ImageBlurEffectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D46C487183E0BE600474365 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F91C3911841C3830017D6BB /* QuartzCore.framework */,
+				3D46C488183E0BE600474365 /* Foundation.framework */,
+				3D46C48A183E0BE600474365 /* CoreGraphics.framework */,
+				3D46C48C183E0BE600474365 /* UIKit.framework */,
+				3D46C4A7183E0BE600474365 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D46C48E183E0BE600474365 /* ImageBlurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C4BD183E0C7F00474365 /* Resources */,
+				3D46C497183E0BE600474365 /* AppDelegate.h */,
+				3D46C498183E0BE600474365 /* AppDelegate.m */,
+				3D46C49A183E0BE600474365 /* Main.storyboard */,
+				3D46C49D183E0BE600474365 /* ViewController.h */,
+				3D46C49E183E0BE600474365 /* ViewController.m */,
+				3D61B49418435E4300C79950 /* DetailViewController.h */,
+				3D61B49518435E4300C79950 /* DetailViewController.m */,
+				3DE645B7183F87DC00FDB8D2 /* BlurView.h */,
+				3DE645B8183F87DC00FDB8D2 /* BlurView.m */,
+				3D46C4A0183E0BE600474365 /* Images.xcassets */,
+				3D46C48F183E0BE600474365 /* Supporting Files */,
+			);
+			path = ImageBlurEffect;
+			sourceTree = "<group>";
+		};
+		3D46C48F183E0BE600474365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C490183E0BE600474365 /* ImageBlurEffect-Info.plist */,
+				3D46C491183E0BE600474365 /* InfoPlist.strings */,
+				3D46C494183E0BE600474365 /* main.m */,
+				3D46C496183E0BE600474365 /* ImageBlurEffect-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D46C4AD183E0BE600474365 /* ImageBlurEffectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C4B3183E0BE600474365 /* ImageBlurEffectTests.m */,
+				3D46C4AE183E0BE600474365 /* Supporting Files */,
+			);
+			path = ImageBlurEffectTests;
+			sourceTree = "<group>";
+		};
+		3D46C4AE183E0BE600474365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C4AF183E0BE600474365 /* ImageBlurEffectTests-Info.plist */,
+				3D46C4B0183E0BE600474365 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D46C4BD183E0C7F00474365 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DE31E54183F235900A32E4F /* brave@2x.png */,
+				3DE31E55183F235900A32E4F /* brave.png */,
+				3D46C4BE183E0C7F00474365 /* Image Enhancers */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3D46C4BE183E0C7F00474365 /* Image Enhancers */ = {
+			isa = PBXGroup;
+			children = (
+				3D46C4BF183E0C7F00474365 /* UIImage+ImageEffects.h */,
+				3D46C4C0183E0C7F00474365 /* UIImage+ImageEffects.m */,
+			);
+			path = "Image Enhancers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D46C484183E0BE600474365 /* ImageBlurEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D46C4B7183E0BE700474365 /* Build configuration list for PBXNativeTarget "ImageBlurEffect" */;
+			buildPhases = (
+				3D46C481183E0BE600474365 /* Sources */,
+				3D46C482183E0BE600474365 /* Frameworks */,
+				3D46C483183E0BE600474365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageBlurEffect;
+			productName = ImageBlurEffect;
+			productReference = 3D46C485183E0BE600474365 /* ImageBlurEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D46C4A5183E0BE600474365 /* ImageBlurEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D46C4BA183E0BE700474365 /* Build configuration list for PBXNativeTarget "ImageBlurEffectTests" */;
+			buildPhases = (
+				3D46C4A2183E0BE600474365 /* Sources */,
+				3D46C4A3183E0BE600474365 /* Frameworks */,
+				3D46C4A4183E0BE600474365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D46C4AC183E0BE600474365 /* PBXTargetDependency */,
+			);
+			name = ImageBlurEffectTests;
+			productName = ImageBlurEffectTests;
+			productReference = 3D46C4A6183E0BE600474365 /* ImageBlurEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D46C47D183E0BE600474365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mahesh Shanbhag";
+				TargetAttributes = {
+					3D46C4A5183E0BE600474365 = {
+						TestTargetID = 3D46C484183E0BE600474365;
+					};
+				};
+			};
+			buildConfigurationList = 3D46C480183E0BE600474365 /* Build configuration list for PBXProject "ImageBlurEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D46C47C183E0BE600474365;
+			productRefGroup = 3D46C486183E0BE600474365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D46C484183E0BE600474365 /* ImageBlurEffect */,
+				3D46C4A5183E0BE600474365 /* ImageBlurEffectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D46C483183E0BE600474365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46C4A1183E0BE600474365 /* Images.xcassets in Resources */,
+				3D46C493183E0BE600474365 /* InfoPlist.strings in Resources */,
+				3DE31E56183F235900A32E4F /* brave@2x.png in Resources */,
+				3D46C49C183E0BE600474365 /* Main.storyboard in Resources */,
+				3DE31E57183F235900A32E4F /* brave.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D46C4A4183E0BE600474365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46C4B2183E0BE600474365 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D46C481183E0BE600474365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46C4C1183E0C7F00474365 /* UIImage+ImageEffects.m in Sources */,
+				3DE645B9183F87DC00FDB8D2 /* BlurView.m in Sources */,
+				3D46C49F183E0BE600474365 /* ViewController.m in Sources */,
+				3D46C499183E0BE600474365 /* AppDelegate.m in Sources */,
+				3D46C495183E0BE600474365 /* main.m in Sources */,
+				3D61B49618435E4300C79950 /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D46C4A2183E0BE600474365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46C4B4183E0BE600474365 /* ImageBlurEffectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D46C4AC183E0BE600474365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D46C484183E0BE600474365 /* ImageBlurEffect */;
+			targetProxy = 3D46C4AB183E0BE600474365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D46C491183E0BE600474365 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D46C492183E0BE600474365 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D46C49A183E0BE600474365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D46C49B183E0BE600474365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D46C4B0183E0BE600474365 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D46C4B1183E0BE600474365 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D46C4B5183E0BE700474365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D46C4B6183E0BE700474365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D46C4B8183E0BE700474365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageBlurEffect/ImageBlurEffect-Prefix.pch";
+				INFOPLIST_FILE = "ImageBlurEffect/ImageBlurEffect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D46C4B9183E0BE700474365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageBlurEffect/ImageBlurEffect-Prefix.pch";
+				INFOPLIST_FILE = "ImageBlurEffect/ImageBlurEffect-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D46C4BB183E0BE700474365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageBlurEffect.app/ImageBlurEffect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageBlurEffect/ImageBlurEffect-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ImageBlurEffectTests/ImageBlurEffectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3D46C4BC183E0BE700474365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ImageBlurEffect.app/ImageBlurEffect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ImageBlurEffect/ImageBlurEffect-Prefix.pch";
+				INFOPLIST_FILE = "ImageBlurEffectTests/ImageBlurEffectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D46C480183E0BE600474365 /* Build configuration list for PBXProject "ImageBlurEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D46C4B5183E0BE700474365 /* Debug */,
+				3D46C4B6183E0BE700474365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D46C4B7183E0BE700474365 /* Build configuration list for PBXNativeTarget "ImageBlurEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D46C4B8183E0BE700474365 /* Debug */,
+				3D46C4B9183E0BE700474365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D46C4BA183E0BE700474365 /* Build configuration list for PBXNativeTarget "ImageBlurEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D46C4BB183E0BE700474365 /* Debug */,
+				3D46C4BC183E0BE700474365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D46C47D183E0BE600474365 /* Project object */;
+}
