@@ -40,7 +40,7 @@
     
     self.blurView = [[BlurView alloc]initWithFrame:self.containerView.bounds];
     [self.blurView setBackgroundColor:[UIColor clearColor]];
-    self.blurView.blurRadius = 3.0f;
+    self.blurView.blurRadius = 10.0f;
     self.blurView.layer.cornerRadius = 25.0f;
     self.blurView.layer.borderColor = [UIColor colorWithRed:180.0f/255.0f green:180.0f/255.0f blue:180.0f/255.0f alpha:1.0f].CGColor;
     self.blurView.layer.borderWidth = 2.0f;
@@ -53,7 +53,7 @@
     
     
     self.blurPanView = [[BlurView alloc]initWithFrame:CGRectMake(CGRectGetMinX(self.containerView.bounds), CGRectGetMaxY(self.containerView.bounds), CGRectGetWidth(self.containerView.frame), CGRectGetHeight(self.containerView.frame))];
-    self.blurPanView.blurRadius = 3.0f;
+    self.blurPanView.blurRadius = 30.0f;
     [self.blurPanView setBackgroundColor:[UIColor clearColor]];
 
     UIPanGestureRecognizer *doubleTouch = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(doubleTouchPan:)];
