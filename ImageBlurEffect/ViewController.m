@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 #import "BlurView.h"
 
 @interface ViewController ()<UIGestureRecognizerDelegate>
@@ -60,6 +61,15 @@
     [doubleTouch setMinimumNumberOfTouches:2];
     doubleTouch.delegate = self;
     [self.containerView addGestureRecognizer:doubleTouch];
+    
+    
+    // add tap gesture to push view controller
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapGestureRecognized:)];
+    [tapGesture setNumberOfTapsRequired:2];
+    [tapGesture setNumberOfTouchesRequired:1];
+    tapGesture.delegate = self;
+    [self.containerView addGestureRecognizer:tapGesture];
+
 }
 
 - (void)dealloc
@@ -92,7 +102,6 @@
 #pragma mark - Double Touch Pan
 - (void)singleTouchPan:(UIGestureRecognizer *)gestureRecognizer
 {
-    
     if(gestureRecognizer.state == UIGestureRecognizerStateBegan)
     {
         CGPoint point = [gestureRecognizer locationInView:self.view];
@@ -145,6 +154,12 @@
     {
         [self.blurPanView removeFromSuperview];
     }
+}
+
+- (void)tapGestureRecognized:(UIGestureRecognizer *)gestureRecognizer
+{
+    /*DetailViewController *detailVireController = [[DetailViewController alloc]initWithNibName:nil bundle:nil];
+    [self.navigationController pushViewController:detailVireController animated:YES];*/
 }
 
 #pragma mark - Gesture Delegate
